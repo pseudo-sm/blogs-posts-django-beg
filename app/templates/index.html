@@ -1,0 +1,11 @@
+
+{% for post in posts %}
+    Title : {{post.title}}<br>
+    Content : {{post.content}}<br>
+    Posted at : {{post.create_date_time}}<br>
+    Posted by : {{post.author__name}}<br>
+    Genre : {{post.author__category}}<br>
+    Gender : {{post.author__gender}}<br>
+    <img src="http://127.0.0.1:8000/media/{{post.image}}" height="100" width="100">
+    <hr>
+{% endfor %}
